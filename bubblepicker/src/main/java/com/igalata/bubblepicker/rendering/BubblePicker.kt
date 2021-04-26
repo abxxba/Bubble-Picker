@@ -91,7 +91,7 @@ class BubblePicker : GLSurfaceView {
             }
             MotionEvent.ACTION_MOVE -> {
                 if (isSwipe(event)) {
-                    renderer.swipe((previousX - event.x) * 4, (previousY - event.y) * 4)
+                    renderer.swipe((previousX - event.x) * 50, (previousY - event.y) * 50)
                     previousX = event.x
                     previousY = event.y
                 } else {
